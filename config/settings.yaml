@@ -1,0 +1,38 @@
+app:
+  name: "PDF-AI-Repository"
+  version: "1.0.0"
+  environment: "development"
+  debug: true
+
+paths:
+  base: "./"
+  data: "./data/"
+  raw_pdfs: "./data/raw_pdfs/"
+  processed: "./data/processed/"
+  embeddings: "./data/embeddings/"
+  vector_store: "./data/vector_store/"
+  logs: "./logs/"
+
+processing:
+  chunk_size: 1000
+  chunk_overlap: 200
+  max_file_size_mb: 50
+  supported_formats: ["pdf"]
+  parallel_processing: true
+
+database:
+  vector_db_type: "chroma"
+  collection_name: "pdf_documents"
+  persist: true
+
+api:
+  host: "0.0.0.0"
+  port: 8000
+  workers: 1
+  timeout: 30
+  rate_limit_per_minute: 60
+
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "./logs/app.log"
