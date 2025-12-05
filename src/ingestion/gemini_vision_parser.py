@@ -4,11 +4,13 @@ import io
 from PIL import Image
 from typing import List, Dict, Any, Optional
 import fitz  # PyMuPDF
-import logging
+import pandas as pd
 from dataclasses import dataclass
-import json
+import logging
+from ..utils import Logger, ConfigManager
 
-logger = logging.getLogger(__name__)
+logger = Logger.setup_logger(__name__)
+config = ConfigManager()
 
 @dataclass
 class GeminiVisionExtraction:
@@ -17,14 +19,27 @@ class GeminiVisionExtraction:
     extracted_data: Dict[str, Any]
     confidence_score: float
     content_type: str  # text, table, chart, image_description
+    
+    def to_dict(self) -> Dict:
+        return {
+            "text": self.text,
+            "extracted_data": self.extracted_data,
+            "confidence_score": self.confidence_score,
+            "content_type": self.content_type
+        }
 
 class GeminiVisionParser:
     """PDF parsing using Gemini Vision for advanced extraction"""
     
-    def __init__(self, api_key: str, model_name: str = "gemini-1.5-pro-vision"):
+    def __init__(self, api_key: str = None):
+        api_key = api_key or config.get("gemini.api_key")
+        if not api_key:
+            raise ValueError("Gemini API key is required")
+        
         genai.configure(api_key=api_key)
-        self.model = genai.GenerativeModel(model_name)
+        self.model = genai.GenerativeModel("gemini-1.5-pro-vision")
         self.extraction_prompts = self._load_extraction_prompts()
+        self.logger = logger
         
     def _load_extraction_prompts(self) -> Dict[str, str]:
         """Load specialized prompts for different content types"""
@@ -33,6 +48,7 @@ class GeminiVisionParser:
             Extract all text content from this document page. 
             Preserve formatting, headers, and structure.
             Include page numbers, footnotes, and captions.
+            Return the extracted text in a structured format.
             """,
             
             "table_extraction": """
@@ -41,6 +57,12 @@ class GeminiVisionParser:
             2. Convert to Markdown format
             3. Include table captions if present
             4. Note any merged cells
+            Format your response as:
+            TABLE 1: [description]
+            [markdown table]
+            
+            TABLE 2: [description]
+            [markdown table]
             """,
             
             "chart_analysis": """
@@ -49,14 +71,12 @@ class GeminiVisionParser:
             2. Extract data points and trends
             3. Note axis labels and units
             4. Summarize key insights
-            """,
+            Format your response as:
+            CHART 1: [type]
+            [analysis]
             
-            "document_structure": """
-            Analyze the document structure:
-            1. Identify sections and subsections
-            2. Extract headings and their hierarchy
-            3. Identify bullet points and numbered lists
-            4. Note references and citations
+            CHART 2: [type]
+            [analysis]
             """
         }
     
@@ -83,7 +103,7 @@ class GeminiVisionParser:
             )
             
         except Exception as e:
-            logger.error(f"Gemini Vision extraction error: {e}")
+            self.logger.error(f"Gemini Vision extraction error: {e}")
             raise
     
     def extract_tables_with_vision(self, pdf_path: str, page_num: int = 0) -> List[Dict]:
@@ -102,25 +122,8 @@ class GeminiVisionParser:
             return tables
             
         except Exception as e:
-            logger.error(f"Table extraction error: {e}")
+            self.logger.error(f"Table extraction error: {e}")
             return []
-    
-    def analyze_charts(self, pdf_path: str, page_num: int = 0) -> Dict[str, Any]:
-        """Analyze charts and graphs in PDF"""
-        try:
-            page_image = self._pdf_page_to_image(pdf_path, page_num)
-            image_bytes = self._image_to_bytes(page_image)
-            
-            response = self.model.generate_content([
-                self.extraction_prompts["chart_analysis"],
-                {"mime_type": "image/jpeg", "data": image_bytes}
-            ])
-            
-            return self._parse_chart_analysis(response.text)
-            
-        except Exception as e:
-            logger.error(f"Chart analysis error: {e}")
-            return {}
     
     def _pdf_page_to_image(self, pdf_path: str, page_num: int) -> Image.Image:
         """Convert PDF page to PIL Image"""
@@ -128,7 +131,7 @@ class GeminiVisionParser:
         page = doc[page_num]
         
         # Render page to image
-        pix = page.get_pixmap(matrix=fitz.Matrix(2, 2))  # 2x zoom for better quality
+        pix = page.get_pixmap(matrix=fitz.Matrix(2, 2))
         img_data = pix.tobytes("ppm")
         
         # Convert to PIL Image
@@ -146,68 +149,51 @@ class GeminiVisionParser:
     def _parse_table_response(self, response_text: str) -> List[Dict]:
         """Parse Gemini's table extraction response"""
         tables = []
-        lines = response_text.split('\n')
+        sections = response_text.split('\n\n')
         
-        current_table = []
-        in_table = False
-        
-        for line in lines:
-            if '|' in line and ('---' in line or any(c.isalpha() for c in line)):
-                in_table = True
-                current_table.append(line)
-            elif in_table and line.strip() == '':
-                # End of table
+        current_table = None
+        for section in sections:
+            if section.startswith("TABLE"):
                 if current_table:
-                    tables.append({
-                        "markdown": '\n'.join(current_table),
-                        "rows": len([l for l in current_table if '|' in l]),
-                        "parsed": self._markdown_to_dict(current_table)
-                    })
-                    current_table = []
-                    in_table = False
+                    tables.append(current_table)
+                
+                # Start new table
+                lines = section.split('\n')
+                description = lines[0].replace("TABLE", "").strip(": ").strip()
+                markdown_table = '\n'.join(lines[1:]) if len(lines) > 1 else ""
+                
+                current_table = {
+                    "description": description,
+                    "markdown": markdown_table,
+                    "parsed": self._markdown_to_dataframe(markdown_table)
+                }
+            elif current_table:
+                # Continue current table
+                current_table["markdown"] += '\n' + section
+        
+        if current_table:
+            tables.append(current_table)
         
         return tables
     
-    def _markdown_to_dict(self, markdown_lines: List[str]) -> List[Dict]:
-        """Convert markdown table to list of dictionaries"""
-        if not markdown_lines or len(markdown_lines) < 2:
-            return []
-        
-        # Parse headers
-        headers = [h.strip() for h in markdown_lines[0].split('|')[1:-1]]
-        
-        # Parse data rows
-        data = []
-        for line in markdown_lines[2:]:  # Skip header and separator
-            if '|' in line:
-                cells = [c.strip() for c in line.split('|')[1:-1]]
-                if len(cells) == len(headers):
-                    row_dict = {headers[i]: cells[i] for i in range(len(headers))}
-                    data.append(row_dict)
-        
-        return data
-    
-    def _parse_chart_analysis(self, analysis_text: str) -> Dict[str, Any]:
-        """Parse chart analysis response"""
-        sections = analysis_text.split('\n\n')
-        result = {
-            "chart_type": "unknown",
-            "data_points": [],
-            "insights": [],
-            "axes": {}
-        }
-        
-        for section in sections:
-            if "chart type" in section.lower():
-                result["chart_type"] = section.split(':')[-1].strip()
-            elif "axis" in section.lower():
-                lines = section.split('\n')
-                for line in lines:
-                    if 'x-axis' in line.lower():
-                        result["axes"]["x"] = line.split(':')[-1].strip()
-                    elif 'y-axis' in line.lower():
-                        result["axes"]["y"] = line.split(':')[-1].strip()
-            elif "insight" in section.lower() or "trend" in section.lower():
-                result["insights"].append(section.strip())
-        
-        return result
+    def _markdown_to_dataframe(self, markdown: str) -> pd.DataFrame:
+        """Convert markdown table to DataFrame"""
+        try:
+            lines = markdown.strip().split('\n')
+            if len(lines) < 2:
+                return pd.DataFrame()
+            
+            # Parse headers
+            headers = [h.strip() for h in lines[0].split('|')[1:-1]]
+            
+            # Parse data rows
+            data = []
+            for line in lines[2:]:  # Skip separator line
+                if '|' in line:
+                    cells = [c.strip() for c in line.split('|')[1:-1]]
+                    if len(cells) == len(headers):
+                        data.append(cells)
+            
+            return pd.DataFrame(data, columns=headers)
+        except:
+            return pd.DataFrame()
