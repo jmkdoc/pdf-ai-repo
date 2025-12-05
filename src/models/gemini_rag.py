@@ -1,4 +1,12 @@
-import google.generativeai as genai
+try:
+    import google.generativeai as genai
+except Exception:
+    genai = None
+    import warnings
+    warnings.warn(
+        "google.generativeai not available; Gemini RAG features will be disabled",
+        ImportWarning,
+    )
 from typing import List, Dict, Any, Optional
 import logging
 import json
@@ -25,11 +33,14 @@ class GeminiRAGModel:
         gemini_api_key = gemini_api_key or config.get("gemini.api_key")
         if not gemini_api_key:
             raise ValueError("Gemini API key is required")
-        
+
+        if genai is None:
+            raise RuntimeError("google.generativeai package is not installed; please install 'google-generativeai' to use Gemini RAG features")
+
         model_name = model_name or config.get("gemini.models.text", "gemini-1.5-pro")
-        
+
         genai.configure(api_key=gemini_api_key)
-        
+
         self.generation_config = generation_config or config.get("gemini.generation_config", {
             "temperature": 0.1,
             "top_p": 0.95,

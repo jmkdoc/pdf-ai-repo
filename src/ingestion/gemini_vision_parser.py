@@ -1,4 +1,12 @@
-import google.generativeai as genai
+try:
+    import google.generativeai as genai
+except Exception:
+    genai = None
+    import warnings
+    warnings.warn(
+        "google.generativeai not available; Gemini Vision features will be disabled",
+        ImportWarning,
+    )
 import base64
 import io
 from PIL import Image
@@ -35,7 +43,9 @@ class GeminiVisionParser:
         api_key = api_key or config.get("gemini.api_key")
         if not api_key:
             raise ValueError("Gemini API key is required")
-        
+        if genai is None:
+            raise RuntimeError("google.generativeai package is not installed; please install 'google-generativeai' to use Gemini Vision features")
+
         genai.configure(api_key=api_key)
         self.model = genai.GenerativeModel("gemini-1.5-pro-vision")
         self.extraction_prompts = self._load_extraction_prompts()

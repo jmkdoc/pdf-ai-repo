@@ -3,7 +3,45 @@ import hashlib
 from typing import List, Dict, Any, Optional
 from dataclasses import dataclass, asdict
 import logging
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+try:
+    from langchain.text_splitter import RecursiveCharacterTextSplitter
+except Exception:
+    import warnings
+
+    warnings.warn(
+        "langchain not available; using local fallback RecursiveCharacterTextSplitter",
+        ImportWarning,
+    )
+
+    class RecursiveCharacterTextSplitter:
+        """Lightweight fallback of LangChain's RecursiveCharacterTextSplitter.
+
+        This provides a minimal `split_text` method and accepts the same
+        constructor arguments used by the project. It's not feature-complete
+        but is sufficient for simple chunking when `langchain` is not installed.
+        """
+
+        def __init__(self, chunk_size=1000, chunk_overlap=200, length_function=len, separators=None):
+            self.chunk_size = chunk_size
+            self.chunk_overlap = chunk_overlap
+            self.length_function = length_function
+            self.separators = separators or ["\n\n", "\n", " ", ""]
+
+        def split_text(self, text: str):
+            if not text:
+                return []
+
+            # Greedy fixed-size splitting with overlap as a simple approximation
+            chunks = []
+            start = 0
+            text_len = len(text)
+            while start < text_len:
+                end = min(start + self.chunk_size, text_len)
+                chunks.append(text[start:end])
+                if end >= text_len:
+                    break
+                start = max(0, end - self.chunk_overlap)
+            return chunks
 from ..utils import Logger
 
 logger = Logger.setup_logger(__name__)

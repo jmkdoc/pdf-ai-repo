@@ -5,6 +5,8 @@ import numpy as np
 from .embeddings import EmbeddingModel
 import backoff
 from ..utils import Logger, ConfigManager
+import PIL.Image
+import io
 
 logger = Logger.setup_logger(__name__)
 config = ConfigManager()
@@ -99,3 +101,48 @@ class GeminiEmbedding(EmbeddingModel):
         test_text = "Test"
         embedding = self.embed_single(test_text)
         return len(embedding)
+
+class GeminiMultimodalEmbedding(GeminiEmbedding):
+    """Multimodal embedding for text and images"""
+    
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+    
+    def embed_image(self, image_path: str) -> List[float]:
+        """Embed image using Gemini"""
+        try:
+            # Load image
+            image = PIL.Image.open(image_path)
+            
+            # Convert to bytes
+            img_byte_arr = io.BytesIO()
+            image.save(img_byte_arr, format='JPEG')
+            img_bytes = img_byte_arr.getvalue()
+            
+            # Embed image
+            result = genai.embed_content(
+                model=self.model_name,
+                content=img_bytes,
+                task_type=self.task_type
+            )
+            
+            return result['embedding']
+            
+        except Exception as e:
+            logger.error(f"Image embedding error: {e}")
+            return self._random_embedding()
+    
+    def embed_multimodal(self, text: str, image_path: Optional[str] = None) -> List[float]:
+        """Combine text and image embeddings"""
+        text_embedding = self.embed_single(text)
+        
+        if image_path:
+            image_embedding = self.embed_image(image_path)
+            # Simple average combination
+            combined = [
+                (t + i) / 2 
+                for t, i in zip(text_embedding, image_embedding)
+            ]
+            return combined
+        
+        return text_embedding

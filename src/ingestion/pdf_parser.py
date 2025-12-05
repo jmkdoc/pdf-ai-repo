@@ -130,7 +130,7 @@ class PDFParser:
             
         return existing_contents
     
-    def _extract_metadata(self, doc: fitz.Document, file_path: str) -> PDFMetadata:
+    def _extract_metadata(self, doc: "fitz.Document", file_path: str) -> PDFMetadata:
         """Extract PDF metadata"""
         metadata_dict = doc.metadata
         
@@ -146,7 +146,7 @@ class PDFParser:
             keywords=metadata_dict.get('keywords', '').split(',') if metadata_dict.get('keywords') else None
         )
     
-    def _extract_images(self, page: fitz.Page) -> List[Dict]:
+    def _extract_images(self, page: "fitz.Page") -> List[Dict]:
         """Extract images from PDF page"""
         images = []
         image_list = page.get_images()

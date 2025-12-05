@@ -19,6 +19,7 @@ pinecone-client==3.0.0
 # Embeddings
 sentence-transformers==2.2.2
 openai==0.28.1
+langchain
 
 # Utilities
 backoff==2.2.1
