@@ -4,8 +4,10 @@ import logging
 import numpy as np
 from .embeddings import EmbeddingModel
 import backoff
+from ..utils import Logger, ConfigManager
 
-logger = logging.getLogger(__name__)
+logger = Logger.setup_logger(__name__)
+config = ConfigManager()
 
 class GeminiEmbedding(EmbeddingModel):
     """Google Gemini embedding model"""
@@ -15,8 +17,11 @@ class GeminiEmbedding(EmbeddingModel):
                  task_type: str = "retrieval_document"):
         super().__init__(model_name)
         
-        if api_key:
-            genai.configure(api_key=api_key)
+        api_key = api_key or config.get("gemini.api_key")
+        if not api_key:
+            raise ValueError("Gemini API key is required")
+        
+        genai.configure(api_key=api_key)
         
         self.model_name = model_name
         self.task_type = task_type
@@ -43,20 +48,18 @@ class GeminiEmbedding(EmbeddingModel):
             embeddings = []
             
             for text in texts:
-                # Gemini API expects single text embedding
                 result = genai.embed_content(
                     model=self.model_name,
                     content=text,
                     task_type=self.task_type,
-                    title="Document chunk"  # Optional title for context
+                    title="Document chunk"
                 )
                 
                 if result and 'embedding' in result:
                     embeddings.append(result['embedding'])
                 else:
                     logger.error(f"No embedding returned for text: {text[:50]}...")
-                    # Return zero vector as fallback
-                    embeddings.append([0.0] * 768)  # Standard dimension
+                    embeddings.append([0.0] * 768)
             
             logger.info(f"Generated {len(embeddings)} embeddings")
             return embeddings
@@ -77,13 +80,11 @@ class GeminiEmbedding(EmbeddingModel):
                 batch_embeddings = self.embed(batch)
                 all_embeddings.extend(batch_embeddings)
                 
-                # Rate limiting pause
                 import time
-                time.sleep(0.1)  # 100ms delay between batches
+                time.sleep(0.1)
                 
             except Exception as e:
                 logger.error(f"Batch embedding error: {e}")
-                # Fallback: use random embeddings for failed batch
                 fallback_embeddings = [self._random_embedding() for _ in batch]
                 all_embeddings.extend(fallback_embeddings)
         
@@ -95,49 +96,6 @@ class GeminiEmbedding(EmbeddingModel):
     
     def get_embedding_dimension(self) -> int:
         """Get embedding dimension for the model"""
-        # Test with a small text to get dimension
         test_text = "Test"
         embedding = self.embed_single(test_text)
         return len(embedding)
-
-class GeminiMultimodalEmbedding(GeminiEmbedding):
-    """Multimodal embedding for text and images"""
-    
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-    
-    def embed_image(self, image_path: str) -> List[float]:
-        """Embed image using Gemini"""
-        try:
-            import PIL.Image
-            
-            # Load image
-            image = PIL.Image.open(image_path)
-            
-            # Convert to base64 or use PIL directly
-            result = genai.embed_content(
-                model=self.model_name,
-                content=image,
-                task_type=self.task_type
-            )
-            
-            return result['embedding']
-            
-        except Exception as e:
-            logger.error(f"Image embedding error: {e}")
-            return self._random_embedding()
-    
-    def embed_multimodal(self, text: str, image_path: Optional[str] = None) -> List[float]:
-        """Combine text and image embeddings"""
-        text_embedding = self.embed_single(text)
-        
-        if image_path:
-            image_embedding = self.embed_image(image_path)
-            # Simple average combination
-            combined = [
-                (t + i) / 2 
-                for t, i in zip(text_embedding, image_embedding)
-            ]
-            return combined
-        
-        return text_embedding
