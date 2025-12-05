@@ -1,0 +1,33 @@
+gemini:
+  api_key: "${GEMINI_API_KEY}"
+  models:
+    text: "gemini-1.5-pro"
+    vision: "gemini-1.5-pro-vision"
+    embedding: "models/embedding-001"
+  generation_config:
+    temperature: 0.1
+    top_p: 0.95
+    top_k: 40
+    max_output_tokens: 8192
+  safety_settings:
+    - category: "HARM_CATEGORY_HARASSMENT"
+      threshold: "BLOCK_MEDIUM_AND_ABOVE"
+    - category: "HARM_CATEGORY_HATE_SPEECH"
+      threshold: "BLOCK_MEDIUM_AND_ABOVE"
+    - category: "HARM_CATEGORY_SEXUALLY_EXPLICIT"
+      threshold: "BLOCK_MEDIUM_AND_ABOVE"
+    - category: "HARM_CATEGORY_DANGEROUS_CONTENT"
+      threshold: "BLOCK_MEDIUM_AND_ABOVE"
+
+multimodal:
+  extract_images: true
+  max_image_size_mb: 4
+  supported_formats: ["png", "jpeg", "jpg", "webp"]
+  enable_table_extraction: true
+  enable_chart_analysis: true
+
+rag:
+  context_window: 128000
+  chunk_overlap_percentage: 20
+  enable_hybrid_search: true
+  rerank_results: true
