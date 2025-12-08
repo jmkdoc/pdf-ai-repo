@@ -11,7 +11,7 @@ if __name__ == "__main__":
     
     uvicorn.run(
         app,
-        host=config.get("api.host", "0.0.0.0"),
-        port=config.get("api.port", 8000),
+        host=config.get("api.host", "127.0.0.1"),
+        port=config.get("api.port", 8080),
         reload=config.get("app.debug", True)
     )

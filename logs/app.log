@@ -1,2 +1,88 @@
 2025-12-05 14:31:21,897 - __main__ - INFO - Starting PDF AI Repository API
 2025-12-05 14:31:21,898 - __main__ - INFO - Host: 0.0.0.0, Port: 8000
+2025-12-05 14:33:20,398 - __main__ - INFO - Starting PDF AI Repository API
+2025-12-05 14:33:20,398 - __main__ - INFO - Host: 0.0.0.0, Port: 8000
+2025-12-05 14:34:44,016 - __main__ - INFO - Starting PDF AI Repository API
+2025-12-05 14:34:44,017 - __main__ - INFO - Host: 0.0.0.0, Port: 8000
+2025-12-05 14:56:01,244 - __main__ - INFO - Starting PDF AI Repository API
+2025-12-05 14:56:01,244 - __main__ - INFO - Host: 0.0.0.0, Port: 8000
+2025-12-05 14:56:34,950 - __main__ - INFO - Starting PDF AI Repository API
+2025-12-05 14:56:34,951 - __main__ - INFO - Host: 0.0.0.0, Port: 8000
+2025-12-05 14:56:56,034 - __main__ - INFO - Starting PDF AI Repository API
+2025-12-05 14:56:56,034 - __main__ - INFO - Host: 0.0.0.0, Port: 8000
+2025-12-05 15:24:53,333 - __main__ - INFO - Starting PDF AI Repository API
+2025-12-05 15:24:53,333 - __main__ - INFO - Host: 0.0.0.0, Port: 8000
+2025-12-08 10:21:32,093 - __main__ - INFO - Starting PDF AI Repository API
+2025-12-08 10:21:32,094 - __main__ - INFO - Host: 0.0.0.0, Port: 8000
+2025-12-08 10:24:57,789 - __main__ - INFO - Starting PDF AI Repository API
+2025-12-08 10:24:57,789 - __main__ - INFO - Host: 0.0.0.0, Port: 8000
+2025-12-08 10:26:45,620 - __main__ - INFO - Starting PDF AI Repository API
+2025-12-08 10:26:45,620 - __main__ - INFO - Host: 0.0.0.0, Port: 8000
+2025-12-08 10:31:05,030 - __main__ - INFO - Starting PDF AI Repository API
+2025-12-08 10:31:05,030 - __main__ - INFO - Host: 0.0.0.0, Port: 8000
+2025-12-08 10:31:29,504 - __main__ - INFO - Starting PDF AI Repository API
+2025-12-08 10:31:29,504 - __main__ - INFO - Host: 0.0.0.0, Port: 8000
+2025-12-08 10:32:19,279 - __main__ - INFO - Starting PDF AI Repository API
+2025-12-08 10:32:19,280 - __main__ - INFO - Host: 127.0.0.1, Port: 8080
+2025-12-08 10:39:07,886 - src.api.endpoints - ERROR - Failed to initialize components: [91mYou are using a deprecated configuration of Chroma.
+
+[94mIf you do not have data you wish to migrate, you only need to change how you construct
+your Chroma client. Please see the "New Clients" section of https://docs.trychroma.com/deployment/migration.
+________________________________________________________________________________________________
+
+If you do have data you wish to migrate, we have a migration tool you can use in order to
+migrate your data to the new Chroma architecture.
+Please `pip install chroma-migrate` and run `chroma-migrate` to migrate your data and then
+change how you construct your Chroma client.
+
+See https://docs.trychroma.com/deployment/migration for more information or join our discord at https://discord.gg/MMeYNTmh3x for help![0m
+2025-12-08 10:39:25,901 - src.api.endpoints - ERROR - Failed to initialize components: [91mYou are using a deprecated configuration of Chroma.
+
+[94mIf you do not have data you wish to migrate, you only need to change how you construct
+your Chroma client. Please see the "New Clients" section of https://docs.trychroma.com/deployment/migration.
+________________________________________________________________________________________________
+
+If you do have data you wish to migrate, we have a migration tool you can use in order to
+migrate your data to the new Chroma architecture.
+Please `pip install chroma-migrate` and run `chroma-migrate` to migrate your data and then
+change how you construct your Chroma client.
+
+See https://docs.trychroma.com/deployment/migration for more information or join our discord at https://discord.gg/MMeYNTmh3x for help![0m
+2025-12-08 10:46:56,482 - src.embedding.vector_store - INFO - Using new ChromaDB PersistentClient API
+2025-12-08 10:46:56,519 - src.embedding.vector_store - INFO - Created new collection: pdf_documents
+2025-12-08 10:46:56,519 - src.embedding.vector_store - INFO - Initialized ChromaDBStore
+2025-12-08 10:46:56,520 - src.models.gemini_rag - INFO - Initialized GeminiRAGModel with gemini-1.5-pro
+2025-12-08 10:46:56,520 - src.models.gemini_multimodal - INFO - Initialized GeminiMultimodalProcessor
+2025-12-08 10:46:56,520 - src.api.endpoints - INFO - All components initialized successfully
+2025-12-08 10:47:00,829 - src.embedding.vector_store - INFO - Using new ChromaDB PersistentClient API
+2025-12-08 10:47:00,830 - src.embedding.vector_store - INFO - Loaded existing collection: pdf_documents
+2025-12-08 10:47:00,830 - src.embedding.vector_store - INFO - Initialized ChromaDBStore
+2025-12-08 10:47:00,830 - src.models.gemini_rag - INFO - Initialized GeminiRAGModel with gemini-1.5-pro
+2025-12-08 10:47:00,831 - src.models.gemini_multimodal - INFO - Initialized GeminiMultimodalProcessor
+2025-12-08 10:47:00,831 - src.api.endpoints - INFO - All components initialized successfully
+2025-12-08 10:47:05,142 - src.embedding.vector_store - INFO - Using new ChromaDB PersistentClient API
+2025-12-08 10:47:05,143 - src.embedding.vector_store - INFO - Loaded existing collection: pdf_documents
+2025-12-08 10:47:05,143 - src.embedding.vector_store - INFO - Initialized ChromaDBStore
+2025-12-08 10:47:05,143 - src.models.gemini_rag - INFO - Initialized GeminiRAGModel with gemini-1.5-pro
+2025-12-08 10:47:05,144 - src.models.gemini_multimodal - INFO - Initialized GeminiMultimodalProcessor
+2025-12-08 10:47:05,144 - src.api.endpoints - INFO - All components initialized successfully
+2025-12-08 10:48:31,190 - src.api.endpoints - INFO - GeminiEmbedding initialized successfully
+2025-12-08 10:48:31,295 - src.embedding.vector_store - INFO - Using new ChromaDB PersistentClient API
+2025-12-08 10:48:31,296 - src.embedding.vector_store - INFO - Loaded existing collection: pdf_documents
+2025-12-08 10:48:31,296 - src.embedding.vector_store - INFO - Initialized ChromaDBStore
+2025-12-08 10:48:31,297 - src.api.endpoints - INFO - VectorStoreManager initialized successfully
+2025-12-08 10:48:31,297 - src.models.gemini_rag - INFO - Initialized GeminiRAGModel with gemini-1.5-pro
+2025-12-08 10:48:31,297 - src.api.endpoints - INFO - GeminiRAGModel initialized successfully
+2025-12-08 10:48:31,297 - src.models.gemini_multimodal - INFO - Initialized GeminiMultimodalProcessor
+2025-12-08 10:48:31,297 - src.api.endpoints - INFO - GeminiMultimodalProcessor initialized successfully
+2025-12-08 10:48:31,297 - src.api.endpoints - INFO - All components initialized (some may be in fallback mode)
+2025-12-08 10:49:02,109 - src.api.endpoints - INFO - GeminiEmbedding initialized successfully
+2025-12-08 10:49:02,201 - src.embedding.vector_store - INFO - Using new ChromaDB PersistentClient API
+2025-12-08 10:49:02,202 - src.embedding.vector_store - INFO - Loaded existing collection: pdf_documents
+2025-12-08 10:49:02,203 - src.embedding.vector_store - INFO - Initialized ChromaDBStore
+2025-12-08 10:49:02,203 - src.api.endpoints - INFO - VectorStoreManager initialized successfully
+2025-12-08 10:49:02,203 - src.models.gemini_rag - INFO - Initialized GeminiRAGModel with gemini-1.5-pro
+2025-12-08 10:49:02,203 - src.api.endpoints - INFO - GeminiRAGModel initialized successfully
+2025-12-08 10:49:02,203 - src.models.gemini_multimodal - INFO - Initialized GeminiMultimodalProcessor
+2025-12-08 10:49:02,203 - src.api.endpoints - INFO - GeminiMultimodalProcessor initialized successfully
+2025-12-08 10:49:02,203 - src.api.endpoints - INFO - All components initialized (some may be in fallback mode)

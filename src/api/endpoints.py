@@ -54,7 +54,7 @@ app.add_middleware(
 )
 
 def initialize_components():
-    """Initialize all required components"""
+    """Initialize all required components with error handling"""
     global vector_store_manager, gemini_embedding, gemini_rag, gemini_processor
     
     try:
@@ -64,38 +64,68 @@ def initialize_components():
         FileManager.ensure_directory(config.get("paths.logs"))
         
         # Initialize embedding model
-        gemini_embedding = GeminiEmbedding(
-            model_name=config.get("gemini.models.embedding"),
-            api_key=config.get("gemini.api_key"),
-            task_type="retrieval_document"
-        )
+        try:
+            gemini_embedding = GeminiEmbedding(
+                model_name=config.get("gemini.models.embedding"),
+                api_key=config.get("gemini.api_key"),
+                task_type="retrieval_document"
+            )
+            logger.info("GeminiEmbedding initialized successfully")
+        except Exception as e:
+            logger.warning(f"Failed to initialize GeminiEmbedding: {e}")
+            gemini_embedding = None
         
-        # Initialize vector store
-        vector_store_manager = VectorStoreManager(
-            store_type=config.get("database.vector_db_type"),
-            collection_name=config.get("database.collection_name"),
-            persist_directory=config.get("paths.vector_store")
-        )
+        # Initialize vector store - with fallback
+        try:
+            vector_store_manager = VectorStoreManager(
+                store_type=config.get("database.vector_db_type", "simple"),
+                collection_name=config.get("database.collection_name", "pdf_documents"),
+                persist_directory=config.get("paths.vector_store")
+            )
+            logger.info("VectorStoreManager initialized successfully")
+        except Exception as e:
+            logger.warning(f"Failed to initialize VectorStoreManager: {e}")
+            # Fallback to simple store
+            vector_store_manager = VectorStoreManager(
+                store_type="simple",
+                collection_name="pdf_documents_fallback"
+            )
+            logger.info("Using SimpleVectorStore as fallback")
         
         # Initialize RAG model
-        gemini_rag = GeminiRAGModel(
-            vector_store=vector_store_manager,
-            embedding_model=gemini_embedding,
-            gemini_api_key=config.get("gemini.api_key"),
-            model_name=config.get("gemini.models.text")
-        )
+        try:
+            if gemini_embedding:
+                gemini_rag = GeminiRAGModel(
+                    vector_store=vector_store_manager,
+                    embedding_model=gemini_embedding,
+                    gemini_api_key=config.get("gemini.api_key"),
+                    model_name=config.get("gemini.models.text")
+                )
+                logger.info("GeminiRAGModel initialized successfully")
+            else:
+                logger.warning("Skipping GeminiRAGModel initialization - no embedding model")
+                gemini_rag = None
+        except Exception as e:
+            logger.warning(f"Failed to initialize GeminiRAGModel: {e}")
+            gemini_rag = None
         
         # Initialize multimodal processor
-        gemini_processor = GeminiMultimodalProcessor(
-            api_key=config.get("gemini.api_key")
-        )
+        try:
+            gemini_processor = GeminiMultimodalProcessor(
+                api_key=config.get("gemini.api_key")
+            )
+            logger.info("GeminiMultimodalProcessor initialized successfully")
+        except Exception as e:
+            logger.warning(f"Failed to initialize GeminiMultimodalProcessor: {e}")
+            gemini_processor = None
         
-        logger.info("All components initialized successfully")
+        logger.info("All components initialized (some may be in fallback mode)")
         
     except Exception as e:
         logger.error(f"Failed to initialize components: {e}")
-        raise
-
+        # Don't raise - allow app to start in limited mode
+        pass
+        
 @app.on_event("startup")
 async def startup_event():
     """Initialize on startup"""
