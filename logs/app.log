@@ -86,3 +86,1416 @@ See https://docs.trychroma.com/deployment/migration for more information or join
 2025-12-08 10:49:02,203 - src.models.gemini_multimodal - INFO - Initialized GeminiMultimodalProcessor
 2025-12-08 10:49:02,203 - src.api.endpoints - INFO - GeminiMultimodalProcessor initialized successfully
 2025-12-08 10:49:02,203 - src.api.endpoints - INFO - All components initialized (some may be in fallback mode)
+2025-12-08 11:07:10,357 - src.api.endpoints - INFO - GeminiEmbedding initialized successfully
+2025-12-08 11:07:10,453 - src.embedding.vector_store - INFO - Using new ChromaDB PersistentClient API
+2025-12-08 11:07:10,454 - src.embedding.vector_store - INFO - Loaded existing collection: pdf_documents
+2025-12-08 11:07:10,454 - src.embedding.vector_store - INFO - Initialized ChromaDBStore
+2025-12-08 11:07:10,454 - src.api.endpoints - INFO - VectorStoreManager initialized successfully
+2025-12-08 11:07:10,454 - src.models.gemini_rag - INFO - Initialized GeminiRAGModel with gemini-1.5-pro
+2025-12-08 11:07:10,454 - src.api.endpoints - INFO - GeminiRAGModel initialized successfully
+2025-12-08 11:07:10,454 - src.models.gemini_multimodal - INFO - Initialized GeminiMultimodalProcessor
+2025-12-08 11:07:10,454 - src.api.endpoints - INFO - GeminiMultimodalProcessor initialized successfully
+2025-12-08 11:07:10,455 - src.api.endpoints - INFO - All components initialized (some may be in fallback mode)
+2025-12-08 11:12:12,513 - src.api.endpoints - INFO - GeminiEmbedding initialized successfully
+2025-12-08 11:12:12,604 - src.embedding.vector_store - INFO - Using new ChromaDB PersistentClient API
+2025-12-08 11:12:12,605 - src.embedding.vector_store - INFO - Loaded existing collection: pdf_documents
+2025-12-08 11:12:12,605 - src.embedding.vector_store - INFO - Initialized ChromaDBStore
+2025-12-08 11:12:12,605 - src.api.endpoints - INFO - VectorStoreManager initialized successfully
+2025-12-08 11:12:12,605 - src.models.gemini_rag - INFO - Initialized GeminiRAGModel with gemini-1.5-pro
+2025-12-08 11:12:12,605 - src.api.endpoints - INFO - GeminiRAGModel initialized successfully
+2025-12-08 11:12:12,606 - src.models.gemini_multimodal - INFO - Initialized GeminiMultimodalProcessor
+2025-12-08 11:12:12,606 - src.api.endpoints - INFO - GeminiMultimodalProcessor initialized successfully
+2025-12-08 11:12:12,606 - src.api.endpoints - INFO - All components initialized (some may be in fallback mode)
+2025-12-08 11:12:17,044 - src.api.endpoints - INFO - GeminiEmbedding initialized successfully
+2025-12-08 11:12:17,168 - src.embedding.vector_store - INFO - Using new ChromaDB PersistentClient API
+2025-12-08 11:12:17,169 - src.embedding.vector_store - INFO - Loaded existing collection: pdf_documents
+2025-12-08 11:12:17,169 - src.embedding.vector_store - INFO - Initialized ChromaDBStore
+2025-12-08 11:12:17,169 - src.api.endpoints - INFO - VectorStoreManager initialized successfully
+2025-12-08 11:12:17,169 - src.models.gemini_rag - INFO - Initialized GeminiRAGModel with gemini-1.5-pro
+2025-12-08 11:12:17,169 - src.api.endpoints - INFO - GeminiRAGModel initialized successfully
+2025-12-08 11:12:17,170 - src.models.gemini_multimodal - INFO - Initialized GeminiMultimodalProcessor
+2025-12-08 11:12:17,170 - src.api.endpoints - INFO - GeminiMultimodalProcessor initialized successfully
+2025-12-08 11:12:17,170 - src.api.endpoints - INFO - All components initialized (some may be in fallback mode)
+2025-12-08 11:12:49,650 - src.api.endpoints - INFO - GeminiEmbedding initialized successfully
+2025-12-08 11:12:49,754 - src.embedding.vector_store - INFO - Using new ChromaDB PersistentClient API
+2025-12-08 11:12:49,756 - src.embedding.vector_store - INFO - Loaded existing collection: pdf_documents
+2025-12-08 11:12:49,757 - src.embedding.vector_store - INFO - Initialized ChromaDBStore
+2025-12-08 11:12:49,757 - src.api.endpoints - INFO - VectorStoreManager initialized successfully
+2025-12-08 11:12:49,757 - src.models.gemini_rag - INFO - Initialized GeminiRAGModel with gemini-1.5-pro
+2025-12-08 11:12:49,758 - src.api.endpoints - INFO - GeminiRAGModel initialized successfully
+2025-12-08 11:12:49,758 - src.models.gemini_multimodal - INFO - Initialized GeminiMultimodalProcessor
+2025-12-08 11:12:49,758 - src.api.endpoints - INFO - GeminiMultimodalProcessor initialized successfully
+2025-12-08 11:12:49,759 - src.api.endpoints - INFO - All components initialized (some may be in fallback mode)
+2025-12-08 11:13:01,142 - src.models.gemini_rag - INFO - Processing question: What is artificial intelligence?...
+2025-12-08 11:13:02,322 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:13:02,839 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:13:03,771 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:13:04,750 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:13:08,457 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:13:08,457 - src.api.endpoints - ERROR - Query error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:13:08,494 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:13:09,278 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:13:10,344 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:13:11,061 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:13:18,354 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:13:18,354 - src.api.endpoints - ERROR - Search error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:13:18,357 - src.models.gemini_rag - INFO - Started new conversation: 1907fcce-0117-45b4-b640-96a0e1d96282
+2025-12-08 11:13:18,357 - src.models.gemini_rag - INFO - Processing question: Explain quantum computing in simple terms...
+2025-12-08 11:13:18,389 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:13:19,167 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:13:20,663 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:13:21,400 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:13:27,612 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:32:01,293 - src.models.gemini_rag - INFO - Processing question: What is artificial intelligence?...
+2025-12-08 11:32:01,323 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:32:01,375 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:32:02,221 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:32:03,613 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:32:03,863 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:32:03,864 - src.api.endpoints - ERROR - Query error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:32:03,896 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:32:03,968 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:32:05,848 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:32:05,951 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:32:10,426 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:32:10,426 - src.api.endpoints - ERROR - Search error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:32:10,429 - src.models.gemini_rag - INFO - Started new conversation: b86e1081-9392-4e34-8c5a-c2fbd6adeb17
+2025-12-08 11:32:10,429 - src.models.gemini_rag - INFO - Processing question: Explain quantum computing in simple terms...
+2025-12-08 11:32:10,454 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:32:11,127 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:32:12,526 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:32:16,216 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:32:17,211 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:32:30,312 - src.api.endpoints - INFO - GeminiEmbedding initialized successfully
+2025-12-08 11:32:30,406 - src.embedding.vector_store - INFO - Using new ChromaDB PersistentClient API
+2025-12-08 11:32:30,407 - src.embedding.vector_store - INFO - Loaded existing collection: pdf_documents
+2025-12-08 11:32:30,407 - src.embedding.vector_store - INFO - Initialized ChromaDBStore
+2025-12-08 11:32:30,407 - src.api.endpoints - INFO - VectorStoreManager initialized successfully
+2025-12-08 11:32:30,408 - src.models.gemini_rag - INFO - Initialized GeminiRAGModel with gemini-1.5-pro
+2025-12-08 11:32:30,408 - src.api.endpoints - INFO - GeminiRAGModel initialized successfully
+2025-12-08 11:32:30,408 - src.models.gemini_multimodal - INFO - Initialized GeminiMultimodalProcessor
+2025-12-08 11:32:30,408 - src.api.endpoints - INFO - GeminiMultimodalProcessor initialized successfully
+2025-12-08 11:32:30,408 - src.api.endpoints - INFO - All components initialized (some may be in fallback mode)
+2025-12-08 11:32:33,441 - src.models.gemini_rag - INFO - Processing question: What is artificial intelligence?...
+2025-12-08 11:32:33,497 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:32:33,687 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:32:34,729 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:32:37,660 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:32:45,380 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:32:45,380 - src.api.endpoints - ERROR - Query error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:32:45,412 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:32:46,387 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:32:46,764 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:32:49,211 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:32:56,528 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:32:56,528 - src.api.endpoints - ERROR - Search error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:32:56,531 - src.models.gemini_rag - INFO - Started new conversation: acac2bd4-ee34-4c6f-bc59-d5175415c0a4
+2025-12-08 11:32:56,531 - src.models.gemini_rag - INFO - Processing question: Explain quantum computing in simple terms...
+2025-12-08 11:32:56,562 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:32:57,531 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:32:57,566 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:32:58,575 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:33:00,769 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:34:24,837 - src.models.gemini_rag - INFO - Processing question: What is artificial intelligence?...
+2025-12-08 11:34:24,852 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:34:25,264 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:34:25,432 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:34:25,701 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:34:32,995 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:34:32,995 - src.api.endpoints - ERROR - Query error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:34:33,030 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:34:33,938 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:34:34,600 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:34:37,585 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:34:45,020 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:34:45,021 - src.api.endpoints - ERROR - Search error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:34:45,023 - src.models.gemini_rag - INFO - Started new conversation: a85aabbd-6abb-4181-af66-a33f9139590b
+2025-12-08 11:34:45,023 - src.models.gemini_rag - INFO - Processing question: Explain quantum computing in simple terms...
+2025-12-08 11:34:45,037 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:34:45,824 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:34:47,042 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:34:50,990 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:34:52,636 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:36:11,802 - src.api.endpoints - INFO - GeminiEmbedding initialized successfully
+2025-12-08 11:36:11,895 - src.embedding.vector_store - INFO - Using new ChromaDB PersistentClient API
+2025-12-08 11:36:11,896 - src.embedding.vector_store - INFO - Loaded existing collection: pdf_documents
+2025-12-08 11:36:11,896 - src.embedding.vector_store - INFO - Initialized ChromaDBStore
+2025-12-08 11:36:11,896 - src.api.endpoints - INFO - VectorStoreManager initialized successfully
+2025-12-08 11:36:11,897 - src.models.gemini_rag - INFO - Initialized GeminiRAGModel with gemini-1.5-pro
+2025-12-08 11:36:11,897 - src.api.endpoints - INFO - GeminiRAGModel initialized successfully
+2025-12-08 11:36:11,897 - src.models.gemini_multimodal - INFO - Initialized GeminiMultimodalProcessor
+2025-12-08 11:36:11,897 - src.api.endpoints - INFO - GeminiMultimodalProcessor initialized successfully
+2025-12-08 11:36:11,897 - src.api.endpoints - INFO - All components initialized (some may be in fallback mode)
+2025-12-08 11:36:23,448 - src.models.gemini_rag - INFO - Processing question: What is artificial intelligence?...
+2025-12-08 11:36:23,495 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:36:23,994 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:36:25,850 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:36:29,595 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:36:31,754 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:36:31,755 - src.api.endpoints - ERROR - Query error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:36:31,840 - src.models.gemini_rag - INFO - Processing question: What is artificial intelligence?...
+2025-12-08 11:36:31,853 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:36:32,381 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:36:33,917 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:36:35,692 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:36:42,111 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:36:42,111 - src.api.endpoints - ERROR - Query error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:36:42,143 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:36:42,715 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:36:42,750 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:36:42,940 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:36:43,782 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:36:43,782 - src.api.endpoints - ERROR - Search error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:36:43,785 - src.models.gemini_rag - INFO - Started new conversation: 390638f9-caf6-4204-bd19-0735ed7901c8
+2025-12-08 11:36:43,785 - src.models.gemini_rag - INFO - Processing question: Explain quantum computing in simple terms...
+2025-12-08 11:36:43,816 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:36:44,588 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:36:46,114 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:36:46,297 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:36:52,083 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:39:31,287 - src.api.endpoints - INFO - GeminiEmbedding initialized successfully
+2025-12-08 11:39:31,379 - src.embedding.vector_store - INFO - Using new ChromaDB PersistentClient API
+2025-12-08 11:39:31,380 - src.embedding.vector_store - INFO - Loaded existing collection: pdf_documents
+2025-12-08 11:39:31,380 - src.embedding.vector_store - INFO - Initialized ChromaDBStore
+2025-12-08 11:39:31,380 - src.api.endpoints - INFO - VectorStoreManager initialized successfully
+2025-12-08 11:39:31,381 - src.models.gemini_rag - INFO - Initialized GeminiRAGModel with gemini-2.0-flash-exp
+2025-12-08 11:39:31,381 - src.api.endpoints - INFO - GeminiRAGModel initialized successfully
+2025-12-08 11:39:31,381 - src.models.gemini_multimodal - INFO - Initialized GeminiMultimodalProcessor
+2025-12-08 11:39:31,381 - src.api.endpoints - INFO - GeminiMultimodalProcessor initialized successfully
+2025-12-08 11:39:31,381 - src.api.endpoints - INFO - All components initialized (some may be in fallback mode)
+2025-12-08 11:39:41,408 - src.models.gemini_rag - INFO - Processing question: What is artificial intelligence?...
+2025-12-08 11:39:41,464 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:39:42,288 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:39:44,018 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:39:46,370 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:39:47,125 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:39:47,125 - src.api.endpoints - ERROR - Query error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:39:47,157 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:39:47,426 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:39:47,641 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:39:50,674 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:39:51,847 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:39:51,847 - src.api.endpoints - ERROR - Search error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:39:51,850 - src.models.gemini_rag - INFO - Started new conversation: f4145f2e-82d3-4b32-a7d5-f8f7d774a4dc
+2025-12-08 11:39:51,851 - src.models.gemini_rag - INFO - Processing question: Explain quantum computing in simple terms...
+2025-12-08 11:39:51,885 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:39:52,121 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:39:52,634 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:39:55,362 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:39:59,561 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:42:35,865 - src.models.gemini_rag - INFO - Processing question: What is artificial intelligence?...
+2025-12-08 11:42:35,879 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:42:35,953 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:42:37,579 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:42:40,795 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:42:47,278 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:42:47,278 - src.api.endpoints - ERROR - Query error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:42:47,313 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:42:47,528 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:42:48,958 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:42:50,323 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:42:56,829 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:42:56,830 - src.api.endpoints - ERROR - Search error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:42:56,832 - src.models.gemini_rag - INFO - Started new conversation: a35606b7-16e0-4c73-a8f8-a59dfd6b09ae
+2025-12-08 11:42:56,832 - src.models.gemini_rag - INFO - Processing question: Explain quantum computing in simple terms...
+2025-12-08 11:42:56,866 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:42:57,083 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:42:57,779 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:42:59,270 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:43:06,438 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:50:57,981 - src.models.gemini_rag - INFO - Processing question: What is artificial intelligence?...
+2025-12-08 11:50:58,008 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:50:58,174 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:50:59,647 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:51:01,673 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:51:08,941 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:51:08,941 - src.api.endpoints - ERROR - Query error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:51:08,977 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:51:09,477 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:51:10,508 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:51:11,687 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:51:14,035 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:51:14,035 - src.api.endpoints - ERROR - Search error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:51:14,038 - src.models.gemini_rag - INFO - Started new conversation: 07b2004b-9abd-45e3-a5e7-70d0dfef8cf2
+2025-12-08 11:51:14,038 - src.models.gemini_rag - INFO - Processing question: Explain quantum computing in simple terms...
+2025-12-08 11:51:14,067 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:51:14,426 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:51:14,642 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:51:17,533 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:51:25,218 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 11:52:23,258 - src.api.endpoints - INFO - GeminiEmbedding initialized successfully
+2025-12-08 11:52:23,353 - src.embedding.vector_store - INFO - Using new ChromaDB PersistentClient API
+2025-12-08 11:52:23,354 - src.embedding.vector_store - INFO - Loaded existing collection: pdf_documents
+2025-12-08 11:52:23,354 - src.embedding.vector_store - INFO - Initialized ChromaDBStore
+2025-12-08 11:52:23,354 - src.api.endpoints - INFO - VectorStoreManager initialized successfully
+2025-12-08 11:52:23,354 - src.models.gemini_rag - INFO - Initialized GeminiRAGModel with gemini-2.0-flash-exp
+2025-12-08 11:52:23,354 - src.api.endpoints - INFO - GeminiRAGModel initialized successfully
+2025-12-08 11:52:23,354 - src.models.gemini_multimodal - INFO - Initialized GeminiMultimodalProcessor
+2025-12-08 11:52:23,355 - src.api.endpoints - INFO - GeminiMultimodalProcessor initialized successfully
+2025-12-08 11:52:23,355 - src.api.endpoints - INFO - All components initialized (some may be in fallback mode)
+2025-12-08 11:52:27,440 - src.api.endpoints - INFO - GeminiEmbedding initialized successfully
+2025-12-08 11:52:27,535 - src.embedding.vector_store - INFO - Using new ChromaDB PersistentClient API
+2025-12-08 11:52:27,537 - src.embedding.vector_store - INFO - Loaded existing collection: pdf_documents
+2025-12-08 11:52:27,537 - src.embedding.vector_store - INFO - Initialized ChromaDBStore
+2025-12-08 11:52:27,537 - src.api.endpoints - INFO - VectorStoreManager initialized successfully
+2025-12-08 11:52:27,537 - src.models.gemini_rag - INFO - Initialized GeminiRAGModel with gemini-2.0-flash-exp
+2025-12-08 11:52:27,537 - src.api.endpoints - INFO - GeminiRAGModel initialized successfully
+2025-12-08 11:52:27,537 - src.models.gemini_multimodal - INFO - Initialized GeminiMultimodalProcessor
+2025-12-08 11:52:27,537 - src.api.endpoints - INFO - GeminiMultimodalProcessor initialized successfully
+2025-12-08 11:52:27,537 - src.api.endpoints - INFO - All components initialized (some may be in fallback mode)
+2025-12-08 11:52:35,976 - src.api.endpoints - INFO - GeminiEmbedding initialized successfully
+2025-12-08 11:52:36,067 - src.embedding.vector_store - INFO - Using new ChromaDB PersistentClient API
+2025-12-08 11:52:36,069 - src.embedding.vector_store - INFO - Loaded existing collection: pdf_documents
+2025-12-08 11:52:36,069 - src.embedding.vector_store - INFO - Initialized ChromaDBStore
+2025-12-08 11:52:36,069 - src.api.endpoints - INFO - VectorStoreManager initialized successfully
+2025-12-08 11:52:36,069 - src.models.gemini_rag - INFO - Initialized GeminiRAGModel with gemini-2.0-flash-exp
+2025-12-08 11:52:36,069 - src.api.endpoints - INFO - GeminiRAGModel initialized successfully
+2025-12-08 11:52:36,069 - src.models.gemini_multimodal - INFO - Initialized GeminiMultimodalProcessor
+2025-12-08 11:52:36,069 - src.api.endpoints - INFO - GeminiMultimodalProcessor initialized successfully
+2025-12-08 11:52:36,069 - src.api.endpoints - INFO - All components initialized (some may be in fallback mode)
+2025-12-08 11:52:40,094 - src.api.endpoints - INFO - GeminiEmbedding initialized successfully
+2025-12-08 11:52:40,186 - src.embedding.vector_store - INFO - Using new ChromaDB PersistentClient API
+2025-12-08 11:52:40,187 - src.embedding.vector_store - INFO - Loaded existing collection: pdf_documents
+2025-12-08 11:52:40,187 - src.embedding.vector_store - INFO - Initialized ChromaDBStore
+2025-12-08 11:52:40,187 - src.api.endpoints - INFO - VectorStoreManager initialized successfully
+2025-12-08 11:52:40,187 - src.models.gemini_rag - INFO - Initialized GeminiRAGModel with gemini-2.0-flash-exp
+2025-12-08 11:52:40,187 - src.api.endpoints - INFO - GeminiRAGModel initialized successfully
+2025-12-08 11:52:40,187 - src.models.gemini_multimodal - INFO - Initialized GeminiMultimodalProcessor
+2025-12-08 11:52:40,187 - src.api.endpoints - INFO - GeminiMultimodalProcessor initialized successfully
+2025-12-08 11:52:40,187 - src.api.endpoints - INFO - All components initialized (some may be in fallback mode)

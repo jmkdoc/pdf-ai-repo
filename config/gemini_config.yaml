@@ -1,8 +1,8 @@
 gemini:
   api_key: "${GEMINI_API_KEY}"
   models:
-    text: "gemini-1.5-pro"
-    vision: "gemini-1.5-pro-vision"
+    text: "gemini-2.0-flash-exp"  # Updated model
+    vision: "gemini-2.0-flash-exp"
     embedding: "models/embedding-001"
   
   generation_config:
