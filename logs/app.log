@@ -1499,3 +1499,241 @@ message: "API key not valid. Please pass a valid API key."
 2025-12-08 11:52:40,187 - src.models.gemini_multimodal - INFO - Initialized GeminiMultimodalProcessor
 2025-12-08 11:52:40,187 - src.api.endpoints - INFO - GeminiMultimodalProcessor initialized successfully
 2025-12-08 11:52:40,187 - src.api.endpoints - INFO - All components initialized (some may be in fallback mode)
+2025-12-08 12:17:30,800 - src.api.endpoints - INFO - GeminiEmbedding initialized successfully
+2025-12-08 12:17:30,911 - src.embedding.vector_store - INFO - Using new ChromaDB PersistentClient API
+2025-12-08 12:17:30,912 - src.embedding.vector_store - INFO - Loaded existing collection: pdf_documents
+2025-12-08 12:17:30,912 - src.embedding.vector_store - INFO - Initialized ChromaDBStore
+2025-12-08 12:17:30,913 - src.api.endpoints - INFO - VectorStoreManager initialized successfully
+2025-12-08 12:17:30,913 - src.models.gemini_rag - INFO - Initialized GeminiRAGModel with gemini-2.0-flash-exp
+2025-12-08 12:17:30,913 - src.api.endpoints - INFO - GeminiRAGModel initialized successfully
+2025-12-08 12:17:30,913 - src.models.gemini_multimodal - INFO - Initialized GeminiMultimodalProcessor
+2025-12-08 12:17:30,913 - src.api.endpoints - INFO - GeminiMultimodalProcessor initialized successfully
+2025-12-08 12:17:30,913 - src.api.endpoints - INFO - All components initialized (some may be in fallback mode)
+2025-12-08 12:17:35,274 - src.api.endpoints - INFO - GeminiEmbedding initialized successfully
+2025-12-08 12:17:35,363 - src.embedding.vector_store - INFO - Using new ChromaDB PersistentClient API
+2025-12-08 12:17:35,364 - src.embedding.vector_store - INFO - Loaded existing collection: pdf_documents
+2025-12-08 12:17:35,365 - src.embedding.vector_store - INFO - Initialized ChromaDBStore
+2025-12-08 12:17:35,365 - src.api.endpoints - INFO - VectorStoreManager initialized successfully
+2025-12-08 12:17:35,365 - src.models.gemini_rag - INFO - Initialized GeminiRAGModel with gemini-2.0-flash-exp
+2025-12-08 12:17:35,365 - src.api.endpoints - INFO - GeminiRAGModel initialized successfully
+2025-12-08 12:17:35,365 - src.models.gemini_multimodal - INFO - Initialized GeminiMultimodalProcessor
+2025-12-08 12:17:35,365 - src.api.endpoints - INFO - GeminiMultimodalProcessor initialized successfully
+2025-12-08 12:17:35,366 - src.api.endpoints - INFO - All components initialized (some may be in fallback mode)
+2025-12-08 12:17:39,533 - src.api.endpoints - INFO - GeminiEmbedding initialized successfully
+2025-12-08 12:17:39,621 - src.embedding.vector_store - INFO - Using new ChromaDB PersistentClient API
+2025-12-08 12:17:39,622 - src.embedding.vector_store - INFO - Loaded existing collection: pdf_documents
+2025-12-08 12:17:39,622 - src.embedding.vector_store - INFO - Initialized ChromaDBStore
+2025-12-08 12:17:39,622 - src.api.endpoints - INFO - VectorStoreManager initialized successfully
+2025-12-08 12:17:39,623 - src.models.gemini_rag - INFO - Initialized GeminiRAGModel with gemini-2.0-flash-exp
+2025-12-08 12:17:39,623 - src.api.endpoints - INFO - GeminiRAGModel initialized successfully
+2025-12-08 12:17:39,623 - src.models.gemini_multimodal - INFO - Initialized GeminiMultimodalProcessor
+2025-12-08 12:17:39,623 - src.api.endpoints - INFO - GeminiMultimodalProcessor initialized successfully
+2025-12-08 12:17:39,623 - src.api.endpoints - INFO - All components initialized (some may be in fallback mode)
+2025-12-08 15:00:50,160 - __main__ - INFO - Starting PDF AI Repository API
+2025-12-08 15:00:50,254 - __main__ - INFO - Host: 127.0.0.1, Port: 8080
+2025-12-08 15:02:12,137 - src.api.endpoints - INFO - GeminiEmbedding initialized successfully
+2025-12-08 15:02:14,946 - src.embedding.vector_store - INFO - Using new ChromaDB PersistentClient API
+2025-12-08 15:02:14,953 - src.embedding.vector_store - INFO - Loaded existing collection: pdf_documents
+2025-12-08 15:02:14,953 - src.embedding.vector_store - INFO - Initialized ChromaDBStore
+2025-12-08 15:02:14,954 - src.api.endpoints - INFO - VectorStoreManager initialized successfully
+2025-12-08 15:02:14,954 - src.models.gemini_rag - INFO - Initialized GeminiRAGModel with gemini-2.0-flash-exp
+2025-12-08 15:02:14,955 - src.api.endpoints - INFO - GeminiRAGModel initialized successfully
+2025-12-08 15:02:14,955 - src.models.gemini_multimodal - INFO - Initialized GeminiMultimodalProcessor
+2025-12-08 15:02:14,955 - src.api.endpoints - INFO - GeminiMultimodalProcessor initialized successfully
+2025-12-08 15:02:14,955 - src.api.endpoints - INFO - All components initialized (some may be in fallback mode)
+2025-12-08 15:02:55,676 - src.models.gemini_rag - INFO - Processing question: What is artificial intelligence?...
+2025-12-08 15:02:55,806 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 15:02:56,640 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 15:02:57,073 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 15:02:58,272 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 15:02:58,699 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 15:02:58,699 - src.api.endpoints - ERROR - Query error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 15:02:58,716 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 15:02:59,289 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 15:03:00,635 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 15:03:01,820 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 15:03:03,567 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 15:03:03,567 - src.api.endpoints - ERROR - Search error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 15:03:03,570 - src.models.gemini_rag - INFO - Started new conversation: 6cbce58c-ce7a-4b64-bd56-30088b863de7
+2025-12-08 15:03:03,570 - src.models.gemini_rag - INFO - Processing question: Explain quantum computing in simple terms...
+2025-12-08 15:03:03,584 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 15:03:04,530 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 15:03:05,062 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 15:03:06,416 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 15:03:10,012 - src.embedding.gemini_embeddings - ERROR - Gemini embedding error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-12-08 15:04:42,565 - src.api.endpoints - INFO - GeminiEmbedding initialized successfully
+2025-12-08 15:04:42,653 - src.embedding.vector_store - INFO - Using new ChromaDB PersistentClient API
+2025-12-08 15:04:42,654 - src.embedding.vector_store - INFO - Loaded existing collection: pdf_documents
+2025-12-08 15:04:42,655 - src.embedding.vector_store - INFO - Initialized ChromaDBStore
+2025-12-08 15:04:42,655 - src.api.endpoints - INFO - VectorStoreManager initialized successfully
+2025-12-08 15:04:42,655 - src.models.gemini_rag - INFO - Initialized GeminiRAGModel with gemini-2.0-flash-exp
+2025-12-08 15:04:42,655 - src.api.endpoints - INFO - GeminiRAGModel initialized successfully
+2025-12-08 15:04:42,655 - src.models.gemini_multimodal - INFO - Initialized GeminiMultimodalProcessor
+2025-12-08 15:04:42,655 - src.api.endpoints - INFO - GeminiMultimodalProcessor initialized successfully
+2025-12-08 15:04:42,655 - src.api.endpoints - INFO - All components initialized (some may be in fallback mode)
+2025-12-08 15:10:49,401 - src.api.endpoints - INFO - GeminiEmbedding initialized successfully
+2025-12-08 15:10:49,500 - src.embedding.vector_store - INFO - Using new ChromaDB PersistentClient API
+2025-12-08 15:10:49,501 - src.embedding.vector_store - INFO - Loaded existing collection: pdf_documents
+2025-12-08 15:10:49,501 - src.embedding.vector_store - INFO - Initialized ChromaDBStore
+2025-12-08 15:10:49,501 - src.api.endpoints - INFO - VectorStoreManager initialized successfully
+2025-12-08 15:10:49,501 - src.models.gemini_rag - INFO - Initialized GeminiRAGModel with gemini-2.0-flash-exp
+2025-12-08 15:10:49,501 - src.api.endpoints - INFO - GeminiRAGModel initialized successfully
+2025-12-08 15:10:49,501 - src.models.gemini_multimodal - INFO - Initialized GeminiMultimodalProcessor
+2025-12-08 15:10:49,501 - src.api.endpoints - INFO - GeminiMultimodalProcessor initialized successfully
+2025-12-08 15:10:49,502 - src.api.endpoints - INFO - All components initialized (some may be in fallback mode)
+2025-12-08 15:10:53,491 - src.api.endpoints - INFO - GeminiEmbedding initialized successfully
+2025-12-08 15:10:53,582 - src.embedding.vector_store - INFO - Using new ChromaDB PersistentClient API
+2025-12-08 15:10:53,583 - src.embedding.vector_store - INFO - Loaded existing collection: pdf_documents
+2025-12-08 15:10:53,583 - src.embedding.vector_store - INFO - Initialized ChromaDBStore
+2025-12-08 15:10:53,583 - src.api.endpoints - INFO - VectorStoreManager initialized successfully
+2025-12-08 15:10:53,583 - src.models.gemini_rag - INFO - Initialized GeminiRAGModel with gemini-2.0-flash-exp
+2025-12-08 15:10:53,583 - src.api.endpoints - INFO - GeminiRAGModel initialized successfully
+2025-12-08 15:10:53,583 - src.models.gemini_multimodal - INFO - Initialized GeminiMultimodalProcessor
+2025-12-08 15:10:53,583 - src.api.endpoints - INFO - GeminiMultimodalProcessor initialized successfully
+2025-12-08 15:10:53,583 - src.api.endpoints - INFO - All components initialized (some may be in fallback mode)
+2025-12-08 15:10:57,629 - src.api.endpoints - INFO - GeminiEmbedding initialized successfully
+2025-12-08 15:10:57,724 - src.embedding.vector_store - INFO - Using new ChromaDB PersistentClient API
+2025-12-08 15:10:57,725 - src.embedding.vector_store - INFO - Loaded existing collection: pdf_documents
+2025-12-08 15:10:57,726 - src.embedding.vector_store - INFO - Initialized ChromaDBStore
+2025-12-08 15:10:57,726 - src.api.endpoints - INFO - VectorStoreManager initialized successfully
+2025-12-08 15:10:57,726 - src.models.gemini_rag - INFO - Initialized GeminiRAGModel with gemini-2.0-flash-exp
+2025-12-08 15:10:57,726 - src.api.endpoints - INFO - GeminiRAGModel initialized successfully
+2025-12-08 15:10:57,726 - src.models.gemini_multimodal - INFO - Initialized GeminiMultimodalProcessor
+2025-12-08 15:10:57,726 - src.api.endpoints - INFO - GeminiMultimodalProcessor initialized successfully
+2025-12-08 15:10:57,726 - src.api.endpoints - INFO - All components initialized (some may be in fallback mode)
